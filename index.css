@@ -1,0 +1,37 @@
+body {
+    background: url('assets/images/sober.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(15px);
+}
+
+input::placeholder {
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #FFFFFF;
+}
+
+.btn-custom-green {
+    color: #fff;
+    background-color: #198754; /* Approximation of Bootstrap’s $green-500 */
+    border-color: #198754;
+}
+
+.btn-custom-green:hover {
+    color: #198754;
+    background-color: #fff; /* Change for better visibility on hover */
+    border-color: #198754;
+}
+
+.social-icon {
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 5px;
+}
