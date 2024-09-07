@@ -33,7 +33,10 @@ input::placeholder {
 }
 
 .social-icon {
-    width: 40px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    padding: 5px;
+    border-radius: 50%;    /* Makes the background circle */
+    background-color: #1c7d32; /* Green background, adjust color code as needed */
+    padding: 5px;          /* Adds space around the icon inside the circle */
+    width: 40px;           /* Adjust based on your needs */
+    height: 40px;          /* Adjust based on your needs */
+    object-fit: contain;   /* Keeps the icon aspect ratio within the circle */
 }
