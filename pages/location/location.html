@@ -25,10 +25,13 @@
 <body>
     <div class="container mt-3">
         <div class="d-flex align-items-center mb-3">
-            <!-- Back Button -->
-            <button class="back-button">
+                    
+            <!-- Updated Back Button with new onclick event -->
+            <button class="back-button" onclick="resetPage()">
                 <i class="bi bi-arrow-left"></i>
             </button>
+
+
 
             <nav class="nav-bar flex-grow-1">
                 <a href="#" onclick="setActive(this)">
@@ -78,39 +81,21 @@
         
         <input id="location-input" class="form-control mb-2" type="text" placeholder="Enter a location">
         <div id="map"></div>
+         <!-- Timer Container -->
+        <div id="timer-container" class="mt-3" style="display: none;">
+            <h3>Timer: <span id="timer">00:00:00</span></h3>
+            <button class="btn btn-primary" id="start-timer" onclick="startTimer()">Start Timer</button>
+            <button class="btn btn-danger" id="stop-timer" onclick="stopTimer()" style="display: none;">Stop Timer</button>
+        </div>
+
+
         <button class="btn btn-custom-green btn-lg px-5 mt-3 w-100" type="submit">Confirm</button>
     </div>
 
     <!-- Include the Google Maps JavaScript API with your API Key and Callback -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3L4eTGBZiSi5bagL1kmhRwRVYa3RNxP0&callback=initMap&libraries=places&v=weekly" async defer></script>
     <script src="health-tips.js"></script>
-    <script>
-        let map;
-        let autocomplete;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: {lat: -34.397, lng: 150.644},
-                zoom: 8,
-            });
-
-            autocomplete = new google.maps.places.Autocomplete(
-                document.getElementById("location-input"),
-                { types: ["geocode"] }
-            );
-            autocomplete.setFields(["formatted_address", "geometry"]);
-            autocomplete.addListener("place_changed", onPlaceChanged);
-        }
-
-        function onPlaceChanged() {
-            const place = autocomplete.getPlace();
-            if (place.geometry) {
-                map.panTo(place.geometry.location);
-                map.setZoom(15);
-            } else {
-                document.getElementById("location-input").placeholder = "Enter a place";
-            }
-        }
-    </script>
+   
+    <script src="location.js"></script>
 </body>
 </html>
