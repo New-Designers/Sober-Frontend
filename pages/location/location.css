@@ -9,6 +9,12 @@
     background-color: #fff; /* Change for better visibility on hover */
     border-color: #198754;
 }
+.btn-custom-green:disabled {
+    background-color: #cccccc; /* Gray color */
+    color: #666666; /* Dark gray text to indicate it's disabled */
+    cursor: not-allowed; /* Show a not-allowed cursor on hover */
+}
+
 #map {
     height: 70vh; /* Adjust height as needed */
     width: 100%; /* Map width */
@@ -40,4 +46,17 @@ body, html {
 }
 .timer-info div {
     margin-bottom: 5px;
+}
+
+#venues-container h4 {
+    color: #2980B9; /* Title color */
+}
+#venues-list {
+    margin-top: 10px;
+}
+.list-group-item {
+    background-color: #f8f9fa; /* Light grey background */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 10px;
+    margin-bottom: 5px; /* Space between items */
 }

@@ -80,6 +80,27 @@
                 <button class="btn btn-danger" id="stop-timer" onclick="stopTimer()" style="display: none;">End</button>
             </div>
         </div>
+        <!-- Accumulated Time Display (Initially hidden) -->
+        <div id="accumulated-time-container" class="container mt-3 text-center" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="card">
+                      
+                        <div class="card-body">
+                            <h4 class="card-title fs-1">Total Time:</h4>
+                            <p class="card-text fs-2" id="accumulated-time"></p>
+                        </div>
+
+                    </div>
+                    <button class="btn btn-custom-green mt-3" onclick="recommendActivities()">Recommend Activities</button>
+                </div>
+            </div>
+        </div>
+        <!-- Recommended Places Container (Initially hidden) -->
+        <div id="recommended-places-container" class="container mt-3 text-white" style="display: none;">
+            <h4>Recommended Activities Near You</h4>
+            <ul id="recommended-places-list" class="list-group"></ul>
+        </div>
         <button class="btn btn btn-custom-green btn-lg px-5 mt-3 w-100" id="confirm-button" onclick="showTimer()">Confirm</button>
 
     </div>
