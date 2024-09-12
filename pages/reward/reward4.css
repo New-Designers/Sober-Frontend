@@ -10,6 +10,9 @@ body {
     padding: 0;
     display: block;
     background-color: #01344A;
+    background-color: #0A3345;
+    font-family: 'Arial', sans-serif;
+    color: white;
 }
 
 .body-top {
@@ -39,11 +42,6 @@ nav a {
 
 nav a i {
   font-size: 20px;
-}
-body {
-    background-color: #0A3345;
-    font-family: 'Arial', sans-serif;
-    color: white;
 }
 
 .record-title {
@@ -81,20 +79,20 @@ body {
 
 .date-badge {
     display: inline-block;
-    background: linear-gradient(90deg, #6DD5FA, #8E2DE2); /* 渐变背景色 */
+    background: linear-gradient(90deg, #6DD5FA, #8E2DE2); 
     color: white;
-    padding: 15px 30px;  /* 增加内边距使其更大 */
-    font-size: 18px;     /* 调整字体大小 */
-    border-radius: 10px; /* 圆角 */
-    margin: 10px 0;      /* 增加上下间距 */
+    padding: 15px 30px;  
+    font-size: 18px;     
+    border-radius: 10px; 
+    margin: 10px 0;      
     text-align: center;
-    font-weight: bold;   /* 字体加粗 */
-    transition: transform 0.2s ease;  /* 添加动画效果 */
-    cursor: pointer;     /* 鼠标悬停时显示为手指 */
+    font-weight: bold;   
+    transition: transform 0.2s ease;  
+    cursor: pointer;    
 }
 
 .date-badge:hover {
-    transform: scale(1.1);  /* 鼠标悬停时放大 */
+    transform: scale(1.1);  
 }
 
 
