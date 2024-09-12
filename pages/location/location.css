@@ -19,11 +19,7 @@
     height: 70vh; /* Adjust height as needed */
     width: 100%; /* Map width */
 }
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+
 #timer-container {
     text-align: center;
     margin-top: 20px;
