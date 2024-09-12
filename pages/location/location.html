@@ -12,13 +12,13 @@
     <script src="../../layout.js"></script>
 </head>
 <body>
-    <div class="body-top">                 
-            <!-- Updated Back Button with new onclick event -->
-            <button class="back-button" onclick="resetPage()">
+    <div class="main-container">
+        <div class="body-top">
+            <button class="back-button">
                 <i class="bi bi-arrow-left"></i>
             </button>
             <nav class="nav-bar">
-                <a href="#" onclick="setActive(this)">
+                <a href="../health-tips/health-tips.html" onclick="setActive(this)">
                     <i class="bi bi-house-door"></i>
                     <i class="bi bi-house-door-fill" style="display: none;"></i>
                 </a>
@@ -28,12 +28,12 @@
                     <i class="bi bi-clock-fill" style="display: none;"></i>
                 </a>
             
-                <a href="#" onclick="setActive(this)">
+                <a href="../location/location.html" onclick="setActive(this)">
                     <i class="bi bi-geo-alt"></i>
                     <i class="bi bi-geo-alt-fill" style="display: none;"></i>
                 </a>
             
-                <a href="../health-tips/health-tips.html" onclick="setActive(this)">
+                <a href="#" onclick="setActive(this)">
                     <i class="bi bi-bag-heart"></i>
                     <i class="bi bi-bag-heart-fill" style="display: none;"></i>
                 </a>
@@ -43,22 +43,21 @@
                     <i class="bi bi-gift-fill" style="display: none;"></i>
                 </a>
             
-                <a href="#" onclick="setActive(this)">
+                <a href="../personalization/user-interest.html" onclick="setActive(this)">
                     <i class="bi bi-person-walking"></i>
                     <i class="bi bi-person-arms-up" style="display: none;"></i>
                 </a>
             
-                <a href="#" onclick="setActive(this)">
+                <a href="../plan/personal-drinking-plan.html" onclick="setActive(this)">
                     <i class="bi bi-journal-bookmark"></i>
                     <i class="bi bi-journal-bookmark-fill" style="display: none;"></i>
                 </a>
             </nav>
             
              
-              <!-- User Login -->
             <div>
-                <a href="#">
-                    <img src="https://via.placeholder.com/50" alt="User Avatar"  class="user-avatar">
+                <a href="../profile/user-profile.html">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar" class="user-avatar">
                 </a>
             </div>
         </div>
@@ -101,11 +100,9 @@
         <button class="btn btn btn-custom-green btn-lg px-5 mt-3 w-100" id="confirm-button" onclick="showTimer()">Confirm</button>
 
     </div>
-
+</div>
     <!-- Include the Google Maps JavaScript API with your API Key and Callback -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3L4eTGBZiSi5bagL1kmhRwRVYa3RNxP0&callback=initMap&libraries=places&v=weekly" async defer></script>
-    <script src="health-tips.js"></script>
-   
     <script src="location.js"></script>
 </body>
 </html>

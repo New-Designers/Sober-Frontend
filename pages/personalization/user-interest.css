@@ -1,54 +1,29 @@
-/* Unified container for the menu and content */
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #e0f7fa; /* Light blue background */
-  min-height: 100vh;
-  width: 100%;
-  overflow-y: auto; /* Allow scrolling within the container */
-}
 
-/* Container for the content */
-.container {
-  background-color: #01344A; /* Dark background for the content */
-  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
-  width: 100%;
-  max-width: 430px; /* Mobile size width */
-  padding: 20px;
-  color: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  margin: 0; /* Remove top margin */
-}
-
-/* Menu bar styling */
-.body-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #6FC9A5; /* Light green */
-  padding: 10px;
-  border-radius: 30px 30px 0 0; /* Rounded top corners */
-  width: 100%;
+body {
+  margin: 0;
+  padding: 0;
   max-width: 430px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0; /* Make the menu sticky */
-  z-index: 10; /* Keep the menu on top */
+  max-height: 932px;
+  overflow: hidden;
+  display: block;
+  background-color: #01344A;
 }
 
-nav {
+.search-bar {
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 70%;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.body-main {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-nav a i {
-  font-size: 26px; /* Increase icon size */
-  padding: 0 10px; /* Spacing between icons */
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
 }
 
 /* Title and subtitle styling */
