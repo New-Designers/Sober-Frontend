@@ -9,3 +9,35 @@
     background-color: #fff; /* Change for better visibility on hover */
     border-color: #198754;
 }
+#map {
+    height: 70vh; /* Adjust height as needed */
+    width: 100%; /* Map width */
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#timer-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2980B9; /* Deep sky blue background */
+    color: #fff; /* White text color */
+    border-radius: 10px;
+}
+#timer-container h3 {
+    margin-bottom: 20px;
+}
+.timer-buttons {
+    display: flex;
+    justify-content: center; /* Center-align the buttons */
+    gap: 10px;
+}
+.timer-info {
+    color: #fff; /* Ensure all timer info text is white */
+    margin-top: 20px;
+}
+.timer-info div {
+    margin-bottom: 5px;
+}
