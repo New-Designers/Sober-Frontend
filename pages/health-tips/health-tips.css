@@ -13,17 +13,17 @@ body {
     overflow: hidden;
     display: block;
     background-color: #01344A;
-    border: solid;
   }
 
 .search-bar {
+  font-family: "Courier New", Courier, monospace;
   display: block;
-  margin: 10px auto 0 auto;
+  margin: 15px auto 0 auto;
   width: 70%;
   height: 35px;
   border-radius: 20px;
 }
-  
+
 .body-main {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +46,12 @@ body {
   padding: 10px;
   box-sizing: border-box;
   background-color: white;
+  transition: transform 0.2s ease;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tip-card:active {
+  transform: scale(1.1);
 }
 
 .tip-card img {
@@ -57,6 +63,41 @@ body {
 }
 
 .tip-brief {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: lighter;
+  text-align: left;
+  width: 90%;
+}
+
+.tip-card-inside {
+  font-family: "Courier New", Courier, monospace;
+  margin: 20px 20px 20px 20px;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 0 0 calc(50% - 10px);
+  height: auto;
+  border: solid 1px #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.tip-card-inside img {
+  width: 80%;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.tip-detail {
   font-size: 12px;
   text-align: center;
   margin-top: 5px;
