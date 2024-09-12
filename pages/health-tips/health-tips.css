@@ -15,4 +15,52 @@ body {
     background-color: #01344A;
     border: solid;
   }
+
+.search-bar {
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 70%;
+  height: 35px;
+  border-radius: 20px;
+}
   
+.body-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tip-card {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 0 0 calc(50% - 10px);
+  height: auto;
+  border: solid 1px #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.tip-card img {
+  width: 95%;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.tip-brief {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: lighter;
+  text-align: left;
+  width: 90%;
+}
