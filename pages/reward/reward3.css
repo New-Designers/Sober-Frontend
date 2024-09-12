@@ -1,0 +1,105 @@
+@media only screen and (min-device-width: 430px) and (max-device-width: 932px) {
+    body {
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #01344A;
+}
+
+.body-top {
+    display: flex;
+    margin: 10% 5%;
+    border: solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+  background-color: #2ED2B9;
+  border-radius: 20px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+nav a i {
+  font-size: 20px;
+}
+
+.user-login {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: #0A3345;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.coffee-break-card {
+  background-color: #1A3B54;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.event-details {
+  font-size: 20px;
+}
+
+.location, .time, .price {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon, .time-icon, .price-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.btn-join {
+  background-color: #2ED2B9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-join:hover {
+  background-color: #28B3A5;
+}
+

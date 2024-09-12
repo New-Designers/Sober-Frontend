@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reward Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reward4.css">
+    <script src="reward4.js"></script>
+</head>
+<body>
+    <div class="body-top">
+        <button class="back-button">
+            1
+        </button>
+        <nav class="nav-bar">
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-house-door"></i>
+                <i class="bi bi-house-door-fill" style="display: none;"></i>
+            </a>
+        
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-clock"></i>
+                <i class="bi bi-clock-fill" style="display: none;"></i>
+            </a>
+        
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-geo-alt"></i>
+                <i class="bi bi-geo-alt-fill" style="display: none;"></i>
+            </a>
+        
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-bag-heart"></i>
+                <i class="bi bi-bag-heart-fill" style="display: none;"></i>
+            </a>
+        
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-gift"></i>
+                <i class="bi bi-gift-fill" style="display: none;"></i>
+            </a>
+        
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-person-walking"></i>
+                <i class="bi bi-person-arms-up" style="display: none;"></i>
+            </a>
+        
+            <a href="#" onclick="setActive(this)">
+                <i class="bi bi-journal-bookmark"></i>
+                <i class="bi bi-journal-bookmark-fill" style="display: none;"></i>
+            </a>
+        </nav>
+        
+        <div class="user-login">
+            <a href="#">
+                <img src="https://via.placeholder.com/50" alt="User Avatar" class="user-avatar">
+            </a>
+        </div>
+    </div>
+    <div class="body-search">
+   </div>
+    <div class="container mt-4">
+        <h1 class="text-center record-title">Time Tracking Record</h1>
+        <div class="record-list">
+            <!-- Time Record Item 1 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Tipsy Tavern</span><br>
+                    <span class="duration">1 hour 15 minutes</span>
+                </div>
+                <div class="date-badge">Aug 15th</div>
+            </div>
+            <!-- Time Record Item 2 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Tipsy Tavern</span><br>
+                    <span class="duration">30 minutes</span>
+                </div>
+                <div class="date-badge">Aug 17th</div>
+            </div>
+            <!-- Time Record Item 3 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">Midnight Oasis</span><br>
+                    <span class="duration">2 hours 45 minutes</span>
+                </div>
+                <div class="date-badge">Aug 20th</div>
+            </div>
+            <!-- Time Record Item 4 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Velvet Room</span><br>
+                    <span class="duration">8 hours</span>
+                </div>
+                <div class="date-badge">Aug 25th</div>
+            </div>
+            <!-- Time Record Item 5 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Tipsy Tavern</span><br>
+                    <span class="duration">1 hour 30 minutes</span>
+                </div>
+                <div class="date-badge">Aug 29th</div>
+            </div>
+            <!-- Time Record Item 6 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Tipsy Tavern</span><br>
+                    <span class="duration">20 minutes</span>
+                </div>
+                <div class="date-badge">Sept 2nd</div>
+            </div>
+            <!-- Time Record Item 7 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">Midnight Oasis</span><br>
+                    <span class="duration">3 hours</span>
+                </div>
+                <div class="date-badge">Sept 6th</div>
+            </div>
+            <!-- Time Record Item 8 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Tipsy Tavern</span><br>
+                    <span class="duration">10 minutes</span>
+                </div>
+                <div class="date-badge">Sept 11th</div>
+            </div>
+            <!-- Time Record Item 9 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Velvet Room</span><br>
+                    <span class="duration">2 hours 15 minutes</span>
+                </div>
+                <div class="date-badge">Sept 18th</div>
+            </div>
+            <!-- Time Record Item 10 -->
+            <div class="record-item">
+                <div class="record-info">
+                    <span class="icon">📍</span>
+                    <span class="location">The Tipsy Tavern</span><br>
+                    <span class="duration">1 hour 40 minutes</span>
+                </div>
+                <div class="date-badge">Sept 27th</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

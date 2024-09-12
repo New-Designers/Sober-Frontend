@@ -1,0 +1,100 @@
+@media only screen and (min-device-width: 430px) and (max-device-width: 932px) {
+    body {
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #01344A;
+}
+
+.body-top {
+    display: flex;
+    margin: 10% 5%;
+    border: solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+  background-color: #2ED2B9;
+  border-radius: 20px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+nav a i {
+  font-size: 20px;
+}
+body {
+    background-color: #0A3345;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.record-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.record-list {
+    margin-top: 20px;
+}
+
+.record-item {
+    background-color: #C4CBD3;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.record-info {
+    color: #233B57;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.duration {
+    font-size: 16px;
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #6DD5FA, #8E2DE2); /* 渐变背景色 */
+    color: white;
+    padding: 15px 30px;  /* 增加内边距使其更大 */
+    font-size: 18px;     /* 调整字体大小 */
+    border-radius: 10px; /* 圆角 */
+    margin: 10px 0;      /* 增加上下间距 */
+    text-align: center;
+    font-weight: bold;   /* 字体加粗 */
+    transition: transform 0.2s ease;  /* 添加动画效果 */
+    cursor: pointer;     /* 鼠标悬停时显示为手指 */
+}
+
+.date-badge:hover {
+    transform: scale(1.1);  /* 鼠标悬停时放大 */
+}
+
+
