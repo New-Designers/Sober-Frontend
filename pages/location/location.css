@@ -1,0 +1,11 @@
+.btn-custom-green {
+    color: #fff;
+    background-color: #198754; /* Approximation of Bootstrap’s $green-500 */
+    border-color: #198754;
+}
+
+.btn-custom-green:hover {
+    color: #198754;
+    background-color: #fff; /* Change for better visibility on hover */
+    border-color: #198754;
+}
