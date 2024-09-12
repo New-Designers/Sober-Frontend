@@ -1,0 +1,129 @@
+/* Unified container for the menu and content */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Container for the content */
+.container {
+  background-color: #01344A;
+  border-radius: 0px 0px 20px 20px; /* Remove top border-radius, keep bottom rounded */
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 0; /* Ensure no gap between menu and content */
+  overflow: hidden;  /* Ensure content doesn't leak out */
+}
+
+/* Menu bar styling */
+.body-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6FC9A5;
+  padding: 10px;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  max-width: 430px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav a i {
+  font-size: 26px;
+  color: white;
+}
+
+/* Title styling */
+.plan-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+.plan-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-items: center;  /* Ensure inputs are centered */
+}
+
+.plan-input-item {
+  background-color: #6FC9A5;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;  /* Make it full width within its grid cell */
+  max-width: 180px;  /* Adjust the max width for better fit */
+}
+
+.plan-input-item label {
+  display: block;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.plan-input-item input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;  /* Make input fields span full width */
+  padding: 5px;  /* Add padding for better spacing */
+  box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+
+/* Button styling */
+.generate-button {
+  background-color: #2ed2b9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background-color: #27b6a0;
+}
+
+/* Recommendation section */
+.plan-recommendation {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-size: 16px;
+}

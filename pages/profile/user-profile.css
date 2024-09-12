@@ -1,0 +1,130 @@
+/* Unified container for the menu and content */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Container for the content */
+.container {
+  background-color: #01344A;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure all elements inside the container are centered */
+}
+
+/* Menu bar styling */
+.body-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6FC9A5;
+  padding: 10px;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  max-width: 430px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav a i {
+  font-size: 26px;
+  color: white;
+}
+
+/* Profile Image and Info */
+.profile-info {
+  text-align: center; /* Center-align the profile info */
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-subtitle {
+  font-size: 16px;
+  color: #A020F0;
+  margin-bottom: 10px;
+}
+
+/* Profile Button styling */
+.profile-button {
+  border-radius: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%; /* Increase width to 90% */
+  max-width: 400px; /* Control the max-width */
+}
+
+.profile-button i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.profile-button:nth-child(even) {
+  background-color: #2D87F0;
+}
+
+/* Add More Information Button */
+.add-info-button {
+  background-color: #6FC9A5;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 90%; /* Decrease width to make it more proportional */
+  max-width: 350px; /* Control the button size to be slightly smaller */
+  text-align: center; /* Center the text inside the button */
+}
+
+.add-info-button:hover {
+  opacity: 0.9;
+}
+
+/* Profile title alignment */
+.profile-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center; /* Center-align the title */
+  margin-bottom: 20px;
+  width: 100%;
+}

@@ -1,0 +1,138 @@
+/* General container styles */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Main content container */
+.container {
+  background-color: #01344A;
+  border-radius: 0px 0px 20px 20px; /* Remove top border-radius, keep bottom rounded */
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  text-align: center;
+}
+
+/* Menu bar */
+.body-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6FC9A5;
+  padding: 10px;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  max-width: 430px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav a i {
+  font-size: 26px;
+  color: white;
+}
+
+/* Input container styling */
+.input-container {
+  background-color: #d3f8e2;  /* Container background color */
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.input-container label {
+  color: black; /* Set the label text to black */
+}
+
+/* Plan input item styling */
+.plan-input-item {
+  width: 100%;
+  background-color: #6FC9A5;  /* Background color for the input field */
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Ensure the input text inside the input fields is white */
+.plan-input-item input,
+.plan-input-item select {
+  color: white;  /* Change text inside input fields to white */
+  background-color: transparent;  /* Keep the same background of the field */
+  border: none;
+  text-align: center;
+}
+
+
+/* Toggle buttons */
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-container button {
+  width: 45%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-container button.active {
+  background-color: #2D87F0;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #4CAF50;
+  border-radius: 10px;
+}
+
+/* Confirm Button */
+.confirm-button {
+  background-color: #2ed2b9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #27b6a0;
+}
